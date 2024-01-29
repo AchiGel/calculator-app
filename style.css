@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  background-color: #3a4663;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+}
+
+.display {
+  min-height: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  background: #181f33;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.display .previous-opperend {
+  color: rgb(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.display .current-opperend {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  background-color: #242d44;
+  padding: 24px;
+  border-radius: 10px;
+}
+
+/* Adjust the grid layout for the last row */
+.buttons > :nth-last-child(-n + 2) {
+  grid-column: span 2;
+}
+
+/* Specific styles for RESET and = buttons */
+#reset,
+#equal {
+  width: 100%;
+  grid-column: span 2;
+}
+
+#equal {
+  color: #fff;
+  background: #d03f2f;
+  box-shadow: 0px -4px 0px 0px #93261a inset;
+}
+
+#equal:hover {
+  background: #f96b5b;
+  box-shadow: 0px -4px 0px 0px #93261a inset;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #434a59;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.667px;
+  border-radius: 10px;
+  background-color: #eae3dc;
+  box-shadow: 0px -4px 0px 0px #b3a497 inset;
+}
+
+.btn:hover {
+  background-color: #fffffe;
+}
+
+.del,
+#reset {
+  color: #fff;
+  background: #647198;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+}
+
+.del:hover,
+#reset:hover {
+  background-color: #a2b2e1;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
